@@ -9,7 +9,7 @@ export default function Accordian(){
 
     function handleSingleSelection(getCurrentId){
         // console.log(getCurrentId);
-        setSelected(getCurrentId);
+        setSelected(getCurrentId  ===  selected? null : getCurrentId);
     }
 
     console.log(selected);
