@@ -12,7 +12,7 @@ export default function Accordian(){
     }
 
     console.log(selected);
-    return ( 
+    return (  
     <div className="wrapper"> 
         <div className="accordian">
             {data && data.length > 0 ? (
