@@ -4,7 +4,7 @@ import '../star-rating/style.css';
 
 export default function StarRating({ noOfStars = 5 }) {
   const [rating, setRating] = useState(0);
-  const [hover, setHover] = useState(0); 
+  const [hover, setHover] = useState(0);  
 
   function handleClick(getCurrentIndex) { 
     
