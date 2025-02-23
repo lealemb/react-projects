@@ -7,7 +7,8 @@ export default function StarRating({ noOfStars = 5 }) {
   const [hover, setHover] = useState(0); 
 
   function handleClick(getCurrentIndex) { 
-    // setRating(getCurrentIndex); 
+    
+    setRating(getCurrentIndex); 
   }
 
   function handleMouseEnter(getCurrentIndex) {
