@@ -59,7 +59,7 @@ export default function Accordian() {
               ) : null} */}
             </div>
           ))
-        ) : (
+        ) : ( 
           <div>No data found !</div>
         )}
       </div>
