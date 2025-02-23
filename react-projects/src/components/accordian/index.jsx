@@ -15,10 +15,16 @@ export default function Accordian(){
 
 
     function handleMultiSelection(getCurrentId){
-        
-    }
+        let cpyMutiple = [...multiple];
+        const findIndexOfCurrentId = cpyMutiple.indexOf(getCurrentId);
 
-    console.log(selected);
+        console.log(findIndexOfCurrentId);
+        if(findIndexOfCurrentId === -1) cpyMutiple.push(getCurrentId);
+        else cpyMutiple.splice(findIndexOfCurrentId, 1);
+
+        setMultiple(cpyMutiple);
+     }
+    console.log(selected, multiple);
     return (  
     <div className="wrapper"> 
     <button onClick={()=> setEnableMultiSelection(!enableMultiSelection)}>Enable Multi Selection</button>
